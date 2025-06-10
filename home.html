@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SASS – Smart City Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+
+<body>
+    <!---MENU-->
+  <nav style="display: flex; justify-content: flex-start; align-items: center; padding: 1rem 2rem; background: #000; gap: 2rem;">
+    <div style="color: white; font-weight: bold; font-size: 1.8rem;">SASS</div>
+    <div style="display: flex; gap: 1.5rem; margin-left: auto;">
+      <a href="#about">About</a>
+      <a href="#focus">Focus Areas</a>
+      <a href="#team">Team</a>
+      <a href="#journey">Progress</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div style="background: rgba(0,0,0,0.6); padding: 6rem 2rem 4rem;">
+      <h1>SASS: Streetscape Application Services Stack</h1>
+      <p>Reshaping urban landscapes through innonvative technological solutions.</p>
+    </div>
+  </header>
+
+  <!---ABOUT SASS SECTION-->
+
+  <section id="about" class="fade-in-section">
+    <h2>About SASS</h2>
+    <p>
+        Under guidance of Dr. Jorge Ortiz, our team focuses on developing a software framework that integrates and processes data collected from smart cities - All in real-time. 
+        Its ultimate purposes are to improve urban safety, mobility, and quality of life.
+    </p>
+   <div style="text-align: center; margin: 2rem 0;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/45FakWmluN0?si=zKMwKZNTnjfjKk14" title="YouTube video player" frameborder="0" allow="accelerometer;
+   autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+    <p>
+         This project will be especially helpful for pedestrians with disabilities or limited mobility, 
+        such as individuals who limp. 
+        By accessing a dedicated SASS mobile app, these users can receive tailored walking guidance, avoid unsafe intersections,
+        and improve their ability to navigate the city with greater independence and safety.
+    </p>
+  </section>
+
+  <!---STRUCTURE OF SASS SECTION -->
+
+ <section id="structure" class="fade-in-section" style="background: #fff; color: #000; padding: 4rem 2rem;">
+  <h2 style="color: #000; text-align: center;">Structure of SASS</h2>
+  <div class="sass-structure-grid">
+    <div class="sass-box">
+      <h3>Multimodality Data Collection System</h3>
+      <p>Build a robust and synchronized data collection system to gather information from multiple camera views and IMU sensors.</p>
+      <img src="multimodalcollect.png" alt="Data Collection" />
+    </div>
+    <div class="sass-box">
+      <h3>REID Feature Extraction</h3>
+      <p>Extract useful features from the collected dataset, such as 2D/3D pose, gait characteristics, and IMU-based features.</p>
+      <img src="reidskeleton.png" alt="Feature Extraction" />
+    </div>
+    <div class="sass-box">
+      <h3>Feature Evaluation & Correlation</h3>
+      <p>Evaluate the effectiveness of different features for REID and tracking tasks, and analyze the correlations among these features.</p>
+      <img src="evaluation.png" alt="Feature Analysis" />
+    </div>
+  </div>
+</section>
+
+
+<!---FOCUS AREAS SECTION-->
+
+  <section id="focus" class="fade-in-section">
+    <h2>Our Focus Areas</h2>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <h3>Multimodal Data Synchronization</h3>
+        <p>Currently we are aligning all sensor data to the same event that could occur. For instance, both camera and motion sensor detects
+            a pedestrian limping, SASS syncs them to the same timestamp.
+        </p>
+      </div>
+      <div class="focus-item" >
+        <h3>Sensors Detecting a Person's Movement</h3>
+        <p>We plan to primarily focus on adding a feature where SASS is able to identify a person in a more discrete manner.
+        Cameras were only able to identify someone who is in need when they raise their hand in the middle of the street. 
+        We want to make pedestrians simply walk around with their phone, that is registered to SASS, and they help from there once detect their movements.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!---TEAM MEMBERS SECTION-->
+
+  <section id="team" class="fade-in-section" style="background: #000; color: #fff;">
+    <h2>Our Team</h2>
+    <div class="focus-grid">
+      <div class="focus-item" style="text-align: center; background: transparent; color: #fff;">
+        <img src="Melanie P..png" alt="Melanie Prias" style="object-fit: cover; border-radius: 50%; margin: 0 auto 1rem; display: block;">
+        <h3>Melanie Prias</h3>
+        <p>An undergraduate senior at Rutgers University majoring in electrical engineering and doing research in psychology.</p>
+      </div>
+      <div class="focus-item" style="text-align: center; background: transparent; color: #fff;">
+        <img src="Alan P..png" alt="Alan P." style="object-fit: cover; border-radius: 50%; margin: 0 auto 1rem; display: block;">
+        <h3>Alan Paik</h3>
+        <p>An undergraduate senior at Rutgers University majoring in Electical Engineering.</p>
+      </div>
+      <div class="focus-item" style="text-align: center; background: transparent; color: #fff;">
+        <img src="Maahin R..png" alt="Maahin R." style="object-fit: cover; border-radius: 50%; margin: 0 auto 1rem; display: block;">
+        <h3>Maahin Rathinagiriswaran</h3>
+        <p>A master's student at Rutgers University in the Electrical and Computer Engineering Department. Specializes in Machine Learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--- PROJECT PROGRESS SECTION-->
+
+  <section id="journey" class="fade-in-section" style="background: #f5f5f5; color: #000; padding: 4rem 2rem;">
+    <h2 style="color: #000; text-align: center;">Progress</h2>
+    <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 700px; margin: 3rem auto;">
+     <div class="progress-entry">
+  <p><strong>May 29, 2025</strong></p>
+  <p>Project was discussed with Dr. Ortiz and team introductory.</p>
+</div>
+<hr style="border: none; border-top: 1px solid #ccc;">
+<div class="progress-entry">
+  <p><strong>June 5, 2025</strong></p>
+  <p>Discussed more about upcoming plans for research. We are planning on collecting sensor data via phone positioning and IMU tracking.</p>
+  <img src="IMUCollectionSystem.png" style="max-width: 100%; height: auto; display: block; margin-top: 1rem;" alt="Sensor placement diagram">
+</div>
+<hr style="border: none; border-top: 1px solid #ccc;">
+<div class="progress-entry">
+  <p><strong>June 10, 2025</strong></p>
+  <p>Read more papers about multi-modal fusion and feasibility of proposed framework. Website was also made to share everyone our journey.</p>
+</div>
+    </div>
+  </section>
+
+<!--- CONTACT US SECTION-->
+
+  <section id="contact" class="fade-in-section" style="background: #fff; color: #000; text-align: center; padding: 4rem 2rem;">
+    <h2 style="color: #000;">Contact Us</h2>
+    <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+      Interested in collaborating or learning more? Reach out to us at the Rutgers Winlab or at <a href="mailto:mprias216@gmail.com" style="color: #000; text-decoration: underline;">mprias216@gmail.com</a>
+    </p>
+  </section>
+
+  <footer style="background: #000; color: #ccc; text-align: center; padding: 1rem; font-family: 'Source Code Pro', monospace; font-size: 0.85rem;">
+  © 2025 Sites For Sights. All rights reserved.
+</footer>
+
+</body>
+
+<!---script-->
+<script src="script.js"></script>
+
+</html>
